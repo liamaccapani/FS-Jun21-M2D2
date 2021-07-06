@@ -49,9 +49,6 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 
             to make sure you give every album the same consistent appearance.
          */
-        .text-nowrap {
-            text-overflow: hidden;
-         }
     </style>
   </head>
   <body>
@@ -59,7 +56,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page
     -->
-    <div class="container-fluid">
+    <div class="container-fluid"> <!-- FIX LINKS -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar scroll</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,12 +101,12 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
     -->
-    <div id="albums" class="container-fluid bg-dark">
+    <div id="albums" class="container-fluid bg-dark"> <!-- FIX MARGIN, PADDING AND DIVs -->
         <div class="row">
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/FASK-Alaska.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">Alaska</h5>
                       <p class="card-text">Fast Animals and Slow Kids</p>
                     </div>
@@ -118,7 +115,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/Pallbearer.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">Heartless</h5>
                       <p class="card-text">Pallbearer</p>
                     </div>
@@ -127,7 +124,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/Mellon-Collie.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title text-nowrap">Mellon Collie and the Infinite Sadness</h5>
                       <p class="card-text text-nowrap">The Smashing Pumpkins</p>
                     </div>
@@ -136,7 +133,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/Thou.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">May Our Chambers Be Full</h5>
                       <p class="card-text">Thou</p>
                     </div>
@@ -145,7 +142,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/TS-Louder.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">Louder Than Bombs</h5>
                       <p class="card-text">The Smiths</p>
                     </div>
@@ -154,7 +151,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/JD-Closer.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">Closer</h5>
                       <p class="card-text">Joy Division</p>
                     </div>
@@ -162,9 +159,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="/assets/BG-Twist.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
-                      <h5 class="card-title">A Twist In The Myth</h5>
+                    <img src="/assets/BG-Battalions.jpg" class="card-img-top" alt="Alaska">
+                    <div class="card-body text-nowrap text-truncate">
+                      <h5 class="card-title">Battalions Of Fear</h5>
                       <p class="card-text">Blind Guardian</p>
                     </div>
                 </div>
@@ -172,7 +169,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/GOLD.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">Why aren't you laughing?</h5>
                       <p class="card-text">GOLD</p>
                     </div>
@@ -192,25 +189,25 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - Tracklist
             - ... And whatever you think it's interesting about it!
     -->
-    <div class="container-fluid bg-light"> <!-- ALBUM REVIEW-->
+    <div class="container-fluid bg-light"> <!-- Album Reviews FIX MARGIN AND PADDING -->
         <h2>Hall of Fame</h2> 
         <div class="row">
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-4">
                 <div class="card">
                     <img src="/assets/FASK-Alaska.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">Alaska</h5>
                       <p class="card-text">Fast Animals and Slow Kids</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-4">
                 <p>Alaska - Fast Animals and Slow Kids. <br>
                     Duration: ..... <br>
                     Genre: Indie-rock
                 </p>
             </div>
-            <div class="col-md-4 col-lg-3"> <!--Add offset! -->
+            <div class="col-md-4 col-lg-4"> <!-- FIX P -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ut ex tempore tempora temporibus cumque reiciendis nemo. Quasi deleniti neque vitae eos repudiandae, voluptatem hic, harum, similique molestias doloremque facilis!
                 </p>
             </div>
@@ -219,12 +216,12 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         Worst album list! Find out the music you don't really like or you find overrated and list it
         in this "hall of shame" chart!
     -->
-        <h2>Hall of Shame</h2>
+        <h2>Hall of Shame</h2> <!-- FIX MARGIN AND PADDING-->
         <div class="row">
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/FASK-Novecento.jpg" class="card-img-top" alt="Alaska">
-                    <div class="card-body">
+                    <div class="card-body text-nowrap text-truncate">
                       <h5 class="card-title">Animali Notturni</h5>
                       <p class="card-text">Fast Animals and Slow Kids</p>
                     </div>
@@ -236,7 +233,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     Genre: Very very Bad
                 </p>
             </div>
-            <div class="col-md-4 col-lg-3"> <!--Add offset! -->
+            <div class="col-md-4 col-lg-4"> <!--Add offset! -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ut ex tempore tempora temporibus cumque reiciendis nemo. Quasi deleniti neque vitae eos repudiandae, voluptatem hic, harum, similique molestias doloremque facilis!
                 </p>
             </div>
@@ -255,8 +252,8 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
             Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
     -->
-    <div class="container-fluid bg-dark">
-        <div class="row">
+    <div class="container-fluid bg-dark"> 
+        <div class="row no-gutters">
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="/assets/FASK-Alaska.jpg" class="card-img-top" alt="Alaska">
